@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VASTRAKALA - Traditional Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="WhatsApp Image 2025-07-25 at 22.45.26_29cba80a.jpg" alt="VASTRAKALA Logo" class="logo-img"> VASTRAKALA</div>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">My Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero fade-in" id="home">
+        <img src="WhatsApp Image 2025-07-25 at 22.45.26_29cba80a.jpg" alt="Traditional Banner" class="hero-img">
+        <div class="hero-content">
+            <h1>Welcome to VASTRAKALA</h1>
+            <p>Discover the beauty of tradition. Shop authentic ethnic wear and accessories.</p>
+            <a href="#products" class="shop-btn">Shop Now</a>
+        </div>
+    </section>
+    <section class="products fade-in" id="products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product-card fade-in">
+                <span class="product-badge">Best Seller</span>
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Saree">
+                <h3>Handloom Saree</h3>
+                <p>Elegant, handwoven saree with traditional motifs.</p>
+                <span class="price">₹2,499</span>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card fade-in">
+                <span class="product-badge">New</span>
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Kurta">
+                <h3>Men's Kurta</h3>
+                <p>Classic cotton kurta for festive occasions.</p>
+                <span class="price">₹1,299</span>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card fade-in">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Jewelry">
+                <h3>Ethnic Jewelry Set</h3>
+                <p>Beautiful handcrafted jewelry to complete your look.</p>
+                <span class="price">₹899</span>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section class="about fade-in" id="about">
+        <h2>About VASTRAKALA</h2>
+        <p>VASTRAKALA brings you the finest collection of traditional wear and accessories, celebrating the rich heritage of Indian craftsmanship. Our products are sourced directly from artisans, ensuring authenticity and quality.</p>
+    </section>
+    <section class="contact fade-in" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <div class="error" id="form-error" style="display:none;"></div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 VASTRAKALA. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

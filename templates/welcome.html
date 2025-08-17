@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to VASTRAKALA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Noto Serif', serif;
+        }
+        .bg-logo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 80vw;
+            max-width: 700px;
+            min-width: 320px;
+            height: auto;
+            opacity: 0.13;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            animation: floatLogo 7s ease-in-out infinite alternate;
+            pointer-events: none;
+            user-select: none;
+        }
+        @keyframes floatLogo {
+            0% { transform: translate(-50%, -50%) scale(1) rotate(-2deg); }
+            50% { transform: translate(-48%, -52%) scale(1.04) rotate(2deg); }
+            100% { transform: translate(-50%, -50%) scale(1) rotate(-2deg); }
+        }
+        .welcome-container {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 251, 231, 0.92);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(160,82,45,0.15);
+            padding: 3rem 2.5rem;
+            text-align: center;
+            max-width: 420px;
+            margin: 10vh auto 0 auto;
+        }
+        .welcome-title {
+            font-size: 2.7rem;
+            font-family: 'Noto Serif', serif;
+            color: #a0522d;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+        }
+        .welcome-btn {
+            background: #a0522d;
+            color: #fffbe7;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: background 0.2s, transform 0.3s cubic-bezier(.23,1.01,.32,1);
+            text-decoration: none;
+            display: inline-block;
+        }
+        .welcome-btn:hover,
+        .welcome-btn:focus-visible {
+            background: #7b341e;
+            transform: scale(1.08) translateY(-10px);
+        }
+        .welcome-btn .btn-text-hover {
+            display: none;
+        }
+        .welcome-btn:hover .btn-text-default,
+        .welcome-btn:focus-visible .btn-text-default {
+            display: none;
+        }
+        .welcome-btn:hover .btn-text-hover,
+        .welcome-btn:focus-visible .btn-text-hover {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <img src="WhatsApp Image 2025-07-25 at 22.45.26_29cba80a.jpg" alt="VASTRAKALA Logo" class="bg-logo">
+    <div class="welcome-container fade-in visible">
+        <div class="welcome-title">Welcome to <span style="color:#7b341e;">VASTRAKALA</span></div>
+        <p style="font-size:1.2rem; color:#3e2723;">Discover the beauty of tradition.<br>Shop authentic ethnic wear and accessories.</p>
+        <a href="home.html" class="welcome-btn">
+            <span class="btn-text-default">Enter Site</span>
+            <span class="btn-text-hover" style="display:none;">Let's Go!</span>
+        </a>
+    </div>
+</body>
+</html> 

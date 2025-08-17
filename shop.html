@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VASTRAKALA - Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo logo-glow"><img src="WhatsApp Image 2025-07-25 at 22.45.26_29cba80a.jpg" alt="VASTRAKALA Logo" class="logo-img"> VASTRAKALA</div>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html" style="position: relative;">My Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="products fade-in" id="shop">
+        <h2>Shop Our Collection</h2>
+        
+        <!-- Category Filter Buttons -->
+        <div class="category-filters">
+            <button class="category-btn active" data-category="all">All Products</button>
+            <button class="category-btn" data-category="sarees">Sarees</button>
+            <button class="category-btn" data-category="kurtas">Kurtas</button>
+            <button class="category-btn" data-category="lehengas">Lehengas</button>
+            <button class="category-btn" data-category="jewelry">Jewelry</button>
+            <button class="category-btn" data-category="accessories">Accessories</button>
+        </div>
+
+        <div class="product-list">
+            <!-- First set of products -->
+            <div class="product-card fade-in" data-category="sarees">
+                <span class="product-badge">Best Seller</span>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQWGJkt-ll5GyIDZ1YRjgD3MXIrYcxDy_mUTvezl3M-fkea_KFdlVGU7b-iEu5ZrsyiXH3a0K1Swz6l0zfCxwaVlxDtWBWujvMFP9cxALIY" alt="Handloom Saree">
+                <h3>Handloom Saree</h3>
+                <p>Whisper-soft silk that dances with every step, adorned with traditional motifs that speak of ancient wisdom. Each thread carries the legacy of master weavers.</p>
+                <span class="price">₹2,499</span>
+                <div class="product-actions">
+                    <div class="product-options">
+                        <select class="size-selector" data-product-id="1">
+                            <option value="">Select Size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="Free Size">Free Size</option>
+                        </select>
+                        <select class="color-selector" data-product-id="1">
+                            <option value="">Select Color</option>
+                            <option value="Deep Red">Deep Red</option>
+                            <option value="Emerald Green">Emerald Green</option>
+                            <option value="Royal Blue">Royal Blue</option>
+                            <option value="Golden">Golden</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Navy Blue">Navy Blue</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCartFromShop('1', 'Handloom Saree', 2499, 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQWGJkt-ll5GyIDZ1YRjgD3MXIrYcxDy_mUTvezl3M-fkea_KFdlVGU7b-iEu5ZrsyiXH3a0K1Swz6l0zfCxwaVlxDtWBWujvMFP9cxALIY', 'Whisper-soft silk that dances with every step, adorned with traditional motifs that speak of ancient wisdom. Each thread carries the legacy of master weavers.')">
+                        <span class="btn-icon">🛒</span>
+                        <span class="btn-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-card fade-in" data-category="kurtas">
+                <span class="product-badge">New</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTStgxh9rbG0qTu55w82ZkRARnUvVhKQ3Ii0w&s" alt="Men's Kurta">
+                <h3>Men's Kurta</h3>
+                <p>Breathable cotton kurta that honors comfort and tradition, perfect for both daily elegance and festive celebrations. Crafted with care for the modern gentleman.</p>
+                <span class="price">₹1,299</span>
+                <div class="product-actions">
+                    <div class="product-options">
+                        <select class="size-selector" data-product-id="2">
+                            <option value="">Select Size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="Free Size">Free Size</option>
+                        </select>
+                        <select class="color-selector" data-product-id="2">
+                            <option value="">Select Color</option>
+                            <option value="Deep Red">Deep Red</option>
+                            <option value="Emerald Green">Emerald Green</option>
+                            <option value="Royal Blue">Royal Blue</option>
+                            <option value="Golden">Golden</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Navy Blue">Navy Blue</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCartFromShop('2', 'Men\'s Kurta', 1299, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTStgxh9rbG0qTu55w82ZkRARnUvVhKQ3Ii0w&s', 'Breathable cotton kurta that honors comfort and tradition, perfect for both daily elegance and festive celebrations. Crafted with care for the modern gentleman.')">
+                        <span class="btn-icon">🛒</span>
+                        <span class="btn-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-card fade-in" data-category="kurtas">
+                <span class="product-badge">Limited</span>
+                <img src="https://www.elahe.in/cdn/shop/files/SV08thAug23_46546_1_2048x.jpg?v=1749035189" alt="Men's Sherwani">
+                <h3>Men's Sherwani</h3>
+                <p>Regal sherwani that commands attention, featuring intricate embroidery and luxurious fabrics. A masterpiece for your most special moments.</p>
+                <span class="price">₹7,499</span>
+                <div class="product-actions">
+                    <div class="product-options">
+                        <select class="size-selector" data-product-id="3">
+                            <option value="">Select Size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="Free Size">Free Size</option>
+                        </select>
+                        <select class="color-selector" data-product-id="3">
+                            <option value="">Select Color</option>
+                            <option value="Deep Red">Deep Red</option>
+                            <option value="Emerald Green">Emerald Green</option>
+                            <option value="Royal Blue">Royal Blue</option>
+                            <option value="Golden">Golden</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Navy Blue">Navy Blue</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCartFromShop('3', 'Men\'s Sherwani', 7499, 'https://www.elahe.in/cdn/shop/files/SV08thAug23_46546_1_2048x.jpg?v=1749035189', 'Regal sherwani that commands attention, featuring intricate embroidery and luxurious fabrics. A masterpiece for your most special moments.')">
+                        <span class="btn-icon">🛒</span>
+                        <span class="btn-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-card fade-in" data-category="lehengas">
+                <span class="product-badge">Designer</span>
+                <img src="https://empress-clothing.com/cdn/shop/files/SEN4004.jpg?v=1735731480" alt="Designer Lehenga">
+                <h3>Designer Lehenga</h3>
+                <p>A canvas of dreams where heritage meets contemporary flair, each stitch telling a story of royal craftsmanship. Perfect for making memories.</p>
+                <span class="price">₹5,999</span>
+                <div class="product-actions">
+                    <div class="product-options">
+                        <select class="size-selector" data-product-id="4">
+                            <option value="">Select Size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="Free Size">Free Size</option>
+                        </select>
+                        <select class="color-selector" data-product-id="4">
+                            <option value="">Select Color</option>
+                            <option value="Deep Red">Deep Red</option>
+                            <option value="Emerald Green">Emerald Green</option>
+                            <option value="Royal Blue">Royal Blue</option>
+                            <option value="Golden">Golden</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Navy Blue">Navy Blue</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCartFromShop('4', 'Designer Lehenga', 5999, 'https://empress-clothing.com/cdn/shop/files/SEN4004.jpg?v=1735731480', 'A canvas of dreams where heritage meets contemporary flair, each stitch telling a story of royal craftsmanship. Perfect for making memories.')">
+                        <span class="btn-icon">🛒</span>
+                        <span class="btn-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-card fade-in" data-category="accessories">
+                <span class="product-badge">Elegant</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6OkZakSPsCqBja9FhwyZQs_n0yI00I3PnQQ&s" alt="Silk Dupatta">
+                <h3>Silk Dupatta</h3>
+                <p>Vibrant silk dupatta with traditional prints that add instant elegance to any outfit. A versatile piece that speaks of timeless beauty.</p>
+                <span class="price">₹799</span>
+                <div class="product-actions">
+                    <div class="product-options">
+                        <select class="size-selector" data-product-id="5">
+                            <option value="">Select Size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="Free Size">Free Size</option>
+                        </select>
+                        <select class="color-selector" data-product-id="5">
+                            <option value="">Select Color</option>
+                            <option value="Deep Red">Deep Red</option>
+                            <option value="Emerald Green">Emerald Green</option>
+                            <option value="Royal Blue">Royal Blue</option>
+                            <option value="Golden">Golden</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Navy Blue">Navy Blue</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCartFromShop('5', 'Silk Dupatta', 799, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6OkZakSPsCqBja9FhwyZQs_n0yI00I3PnQQ&s', 'Vibrant silk dupatta with traditional prints that add instant elegance to any outfit. A versatile piece that speaks of timeless beauty.')">
+                        <span class="btn-icon">🛒</span>
+                        <span class="btn-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-card fade-in" data-category="jewelry">
+                <span class="product-badge">Jewelry</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYQWshg-6P-M3awc0-nSjd2PQUuppYKV_6pw&s" alt="Ethnic Jewelry Set">
+                <h3>Ethnic Jewelry Set</h3>
+                <p>Beautiful handcrafted jewelry to complete your look. Includes necklace, earrings, and bangles.</p>
+                <span class="price">₹899</span>
+                <div class="product-actions">
+                    <div class="product-options">
+                        <select class="size-selector" data-product-id="6">
+                            <option value="">Select Size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="Free Size">Free Size</option>
+                        </select>
+                        <select class="color-selector" data-product-id="6">
+                            <option value="">Select Color</option>
+                            <option value="Deep Red">Deep Red</option>
+                            <option value="Emerald Green">Emerald Green</option>
+                            <option value="Royal Blue">Royal Blue</option>
+                            <option value="Golden">Golden</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Navy Blue">Navy Blue</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCartFromShop('6', 'Ethnic Jewelry Set', 899, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYQWshg-6P-M3awc0-nSjd2PQUuppYKV_6pw&s', 'Beautiful handcrafted jewelry to complete your look. Includes necklace, earrings, and bangles.')">
+                        <span class="btn-icon">🛒</span>
+                        <span class="btn-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-card fade-in" data-category="kurtas">
+                <span class="product-badge">Classic</span>
+                <img src="https://sanwara.com/cdn/shop/files/5_3fb29047-7dc1-47bf-9075-ebdb865f3ada.jpg?v=1719401003" alt="Kurta Pajama">
+                <h3>Kurta Pajama</h3>
+                <p>Traditional kurta pajama set for men. Comfortable and stylish for all occasions.</p>
+                <span class="price">₹1,499</span>
+                <div class="product-actions">
+                    <div class="product-options">
+                        <select class="size-selector" data-product-id="7">
+                            <option value="">Select Size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="Free Size">Free Size</option>
+                        </select>
+                        <select class="color-selector" data-product-id="7">
+                            <option value="">Select Color</option>
+                            <option value="Deep Red">Deep Red</option>
+                            <option value="Emerald Green">Emerald Green</option>
+                            <option value="Royal Blue">Royal Blue</option>
+                            <option value="Golden">Golden</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Navy Blue">Navy Blue</option>
+                        </select>
+            </div>
+                    <button class="add-to-cart-btn" onclick="addToCartFromShop('7', 'Kurta Pajama', 1499, 'https://sanwara.com/cdn/shop/files/5_3fb29047-7dc1-47bf-9075-ebdb865f3ada.jpg?v=1719401003', 'Traditional kurta pajama set for men. Comfortable and stylish for all occasions.')">
+                        <span class="btn-icon">🛒</span>
+                        <span class="btn-text">Add to Cart</span>
+                    </button>
+            </div>
+            </div>
+            <div class="product-card fade-in" data-category="sarees">
+                <span class="product-badge">Festive</span>
+                <img src="https://www.kollybollyethnics.com/image/catalog/data/09Oct2021/Golden-banarasi-silk-saree-3012B.jpg" alt="Banarasi Saree">
+                <h3>Banarasi Saree</h3>
+                <p>Luxurious Banarasi saree with gold zari work. A timeless classic for celebrations.</p>
+                <span class="price">₹3,999</span>
+                <div class="product-actions">
+                    <div class="product-options">
+                        <select class="size-selector" data-product-id="8">
+                            <option value="">Select Size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="Free Size">Free Size</option>
+                        </select>
+                        <select class="color-selector" data-product-id="8">
+                            <option value="">Select Color</option>
+                            <option value="Deep Red">Deep Red</option>
+                            <option value="Emerald Green">Emerald Green</option>
+                            <option value="Royal Blue">Royal Blue</option>
+                            <option value="Golden">Golden</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Navy Blue">Navy Blue</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCartFromShop('8', 'Banarasi Saree', 3999, 'https://www.kollybollyethnics.com/image/catalog/data/09Oct2021/Golden-banarasi-silk-saree-3012B.jpg', 'Luxurious Banarasi saree with gold zari work. A timeless classic for celebrations.')">
+                        <span class="btn-icon">🛒</span>
+                        <span class="btn-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-card fade-in" data-category="kurtas">
+                <span class="product-badge">Handcrafted</span>
+                <img src="https://adroshifashion.in/cdn/shop/files/IMG_1144.jpg?v=1721035738" alt="Chikankari Kurti">
+                <h3>Chikankari Kurti</h3>
+                <p>Elegant Chikankari kurti with fine embroidery. Perfect for daily and festive wear.</p>
+                <span class="price">₹1,199</span>
+                <div class="product-actions">
+                    <div class="product-options">
+                        <select class="size-selector" data-product-id="9">
+                            <option value="">Select Size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="Free Size">Free Size</option>
+                        </select>
+                        <select class="color-selector" data-product-id="9">
+                            <option value="">Select Color</option>
+                            <option value="Deep Red">Deep Red</option>
+                            <option value="Emerald Green">Emerald Green</option>
+                            <option value="Royal Blue">Royal Blue</option>
+                            <option value="Golden">Golden</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Navy Blue">Navy Blue</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCartFromShop('9', 'Chikankari Kurti', 1199, 'https://adroshifashion.in/cdn/shop/files/IMG_1144.jpg?v=1721035738', 'Elegant Chikankari kurti with fine embroidery. Perfect for daily and festive wear.')">
+                        <span class="btn-icon">🛒</span>
+                        <span class="btn-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-card fade-in" data-category="lehengas">
+                <span class="product-badge">Premium</span>
+                <img src="https://5.imimg.com/data5/ECOM/Default/2023/9/340964708/MX/HK/TT/163930577/web014-500x500.webp" alt="Bridal Lehenga">
+                <h3>Bridal Lehenga</h3>
+                <p>Premium bridal lehenga with heavy embellishments. Make your special day unforgettable.</p>
+                <span class="price">₹12,999</span>
+                <div class="product-actions">
+                    <div class="product-options">
+                        <select class="size-selector" data-product-id="10">
+                            <option value="">Select Size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="Free Size">Free Size</option>
+                        </select>
+                        <select class="color-selector" data-product-id="10">
+                            <option value="">Select Color</option>
+                            <option value="Deep Red">Deep Red</option>
+                            <option value="Emerald Green">Emerald Green</option>
+                            <option value="Royal Blue">Royal Blue</option>
+                            <option value="Golden">Golden</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Navy Blue">Navy Blue</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCartFromShop('10', 'Bridal Lehenga', 12999, 'https://5.imimg.com/data5/ECOM/Default/2023/9/340964708/MX/HK/TT/163930577/web014-500x500.webp', 'Premium bridal lehenga with heavy embellishments. Make your special day unforgettable.')">
+                        <span class="btn-icon">🛒</span>
+                        <span class="btn-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="enhanced-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>VASTRAKALA</h3>
+                <p>Where tradition meets timeless elegance. We bring you authentic handcrafted treasures that carry the soul of Indian craftsmanship.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.49 0-.98.196-1.353.569-.373.373-.569.863-.569 1.353s.196.98.569 1.353c.373.373.863.569 1.353.569s.98-.196 1.353-.569c.373-.373.569-.863.569-1.353s-.196-.98-.569-1.353c-.373-.373-.863-.569-1.353-.569z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Our Collection</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#">We're Here to Help</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                    <li><a href="#">Track Your Order</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Our Commitment</h4>
+                <ul>
+                    <li><a href="#">Artisan Stories</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Quality Assurance</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 VASTRAKALA. All rights reserved. | Preserving Heritage, One Thread at a Time</p>
+                <div class="payment-methods">
+                    <span>Secure Payment:</span>
+                    <span class="payment-icon">💳</span>
+                    <span class="payment-icon">🏦</span>
+                    <span class="payment-icon">📱</span>
+                    <span class="payment-icon">💻</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+    <script>
+        // Interactive Cart System for VASTRAKALA Shop
+        
+        // Cart storage using localStorage
+        const CART_STORAGE_KEY = 'vastrakala_cart';
+        
+        // Initialize cart from localStorage
+        function initializeShopCart() {
+            if (!localStorage.getItem(CART_STORAGE_KEY)) {
+                localStorage.setItem(CART_STORAGE_KEY, JSON.stringify([]));
+            }
+        }
+        
+        // Get cart from localStorage
+        function getCart() {
+            return JSON.parse(localStorage.getItem(CART_STORAGE_KEY) || '[]');
+        }
+        
+        // Save cart to localStorage
+        function saveCart(cart) {
+            localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+        }
+        
+        // Add to cart from shop page
+        function addToCartFromShop(productId, productName, productPrice, productImage, productDescription) {
+            // Get selected size and color
+            const sizeSelector = document.querySelector(`[data-product-id="${productId}"] .size-selector`);
+            const colorSelector = document.querySelector(`[data-product-id="${productId}"] .color-selector`);
+            
+            const selectedSize = sizeSelector ? sizeSelector.value : '';
+            const selectedColor = colorSelector ? colorSelector.value : '';
+            
+            // Validate selections
+            if (!selectedSize || !selectedColor) {
+                showShopNotification('Please select both size and color before adding to cart', 'warning');
+                return;
+            }
+            
+            // Get current cart
+            let cart = getCart();
+            
+            // Check if product already exists in cart with same size and color
+            const existingItemIndex = cart.findIndex(item => 
+                item.id === productId && 
+                item.size === selectedSize && 
+                item.color === selectedColor
+            );
+            
+            if (existingItemIndex !== -1) {
+                // Increase quantity if product exists
+                cart[existingItemIndex].quantity += 1;
+                showShopNotification(`${productName} quantity increased in cart`, 'success');
+            } else {
+                // Add new product to cart
+                const newItem = {
+                    id: productId,
+                    name: productName,
+                    price: productPrice,
+                    originalPrice: productPrice,
+                    quantity: 1,
+                    image: productImage,
+                    description: productDescription,
+                    size: selectedSize,
+                    color: selectedColor,
+                    addedAt: new Date().toISOString()
+                };
+                
+                cart.push(newItem);
+                showShopNotification(`${productName} added to cart`, 'success');
+            }
+            
+            // Save updated cart
+            saveCart(cart);
+            
+            // Update cart count in header
+            updateCartCount();
+            
+            // Add success animation to button
+            const addButton = document.querySelector(`[data-product-id="${productId}"] .add-to-cart-btn`);
+            if (addButton) {
+                addButton.classList.add('added-success');
+                setTimeout(() => {
+                    addButton.classList.remove('added-success');
+                }, 1000);
+            }
+            
+            // Reset selectors
+            if (sizeSelector) sizeSelector.value = '';
+            if (colorSelector) colorSelector.value = '';
+        }
+        
+        // Show notification in shop page
+        function showShopNotification(message, type = 'success') {
+            // Remove existing notification
+            const existingNotification = document.querySelector('.shop-notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+            
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `shop-notification ${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <span class="notification-icon">${type === 'success' ? '✨' : '⚠️'}</span>
+                    <span class="notification-text">${message}</span>
+                </div>
+            `;
+            
+            // Add to page
+            document.body.appendChild(notification);
+            
+            // Show notification with animation
+            setTimeout(() => {
+                notification.classList.add('show');
+            }, 100);
+            
+            // Hide notification after 3 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            }, 3000);
+        }
+        
+        // Update cart count in header
+        function updateCartCount() {
+            const cart = getCart();
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            
+            // Update cart count in navigation if it exists
+            const cartLink = document.querySelector('a[href="cart.html"]');
+            if (cartLink) {
+                let cartCount = cartLink.querySelector('.cart-count');
+                if (!cartCount) {
+                    cartCount = document.createElement('span');
+                    cartCount.className = 'cart-count';
+                    cartLink.appendChild(cartCount);
+                }
+                cartCount.textContent = totalItems > 0 ? totalItems : '';
+                cartCount.style.display = totalItems > 0 ? 'inline-block' : 'none';
+            }
+        }
+        
+        // Enhanced category filtering with cart integration
+        function filterProducts(category) {
+            const productCards = document.querySelectorAll('.product-card');
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            
+            // Update active button
+            categoryBtns.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter products with smooth animation
+            productCards.forEach((card, index) => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                if (category === 'all' || cardCategory === category) {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.classList.add('visible');
+                        card.classList.remove('hidden');
+                    }, index * 100);
+                } else {
+                    card.classList.add('hidden');
+                    card.classList.remove('visible');
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+        
+        // Initialize shop cart when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeShopCart();
+            updateCartCount();
+            
+            // Add event listeners for category filtering
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    filterProducts(category);
+                });
+            });
+            
+            // Add smooth scroll for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+        
+        // Enhanced add to cart button interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to all add to cart buttons
+            const addButtons = document.querySelectorAll('.add-to-cart-btn');
+            addButtons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 6px 20px rgba(160, 82, 45, 0.3)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 4px 15px rgba(160, 82, 45, 0.2)';
+                });
+            });
+            
+            // Add focus effects for accessibility
+            const selectors = document.querySelectorAll('.size-selector, .color-selector');
+            selectors.forEach(selector => {
+                selector.addEventListener('focus', function() {
+                    this.parentElement.style.transform = 'scale(1.02)';
+                });
+                
+                selector.addEventListener('blur', function() {
+                    this.parentElement.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

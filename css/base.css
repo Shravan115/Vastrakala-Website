@@ -1,0 +1,33 @@
+/* base.css: resets, typography, variables */
+:root {
+  --color-maroon: #7b341e;
+  --color-beige: #fff8f0;
+  --color-gold: #ffd180;
+  --color-brown: #a0522d;
+  --color-dark: #3e2723;
+  --font-serif: 'Noto Serif', serif;
+  --font-sans: 'Segoe UI', Arial, sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background: var(--color-beige);
+  color: var(--color-dark);
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--color-maroon);
+  margin: 0 0 0.5em 0;
+}
+a {
+  color: var(--color-maroon);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-gold);
+}
+button {
+  font-family: var(--font-sans);
+} 
